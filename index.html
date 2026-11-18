@@ -3,17 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Computer Systems – Revision Quiz</title>
+<title>KS3 Revision Quizzes</title>
 <link rel="stylesheet" href="quiz.css">
+<style>
+  .quiz-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .quiz-list a{display:block;color:inherit;text-decoration:none}
+  .quiz-list a:hover .card{border-color:var(--accent)}
+  .quiz-list a:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:14px}
+  .quiz-list h2{color:var(--accent);margin:8px 0 4px}
+</style>
 </head>
 <body>
 <main>
-  <h1>Computer Systems – Revision Quiz</h1>
-  <p class="sub">Year 9 · Unit 9.2 · Answer each question, press <b>Check</b>, then read the feedback.</p>
-  <div id="app" aria-live="polite"></div>
-  <footer>Tip: press Enter to check your answer and Enter again for the next question.</footer>
-</main>
+  <h1>KS3 Revision Quizzes</h1>
+  <p class="sub">Choose a quiz to start revising.</p>
 
-<script src="quiz.js"></script>
+  <ul class="quiz-list">
+    <li>
+      <a href="y9-computer-systems/">
+        <div class="card">
+          <span class="tag">Year 9 · Unit 9.2</span>
+          <h2>Computer Systems</h2>
+          <p class="m0 muted">Hardware and software, operating systems, the processor, memory and storage, input and output, and logic gates.</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</main>
 </body>
 </html>
